@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("startButton");
-    button.addEventListener("click", startTest);
+    document.getElementById("startButton").addEventListener("click", function() {
 
-    function startTest() {
-        const container = document.querySelector(".container");
-        container.classList.add("animation-target", "show");
-        alert("Тест начался! Удачи!");
-        // Здесь можно добавить логику теста
-    }
+            document.getElementById("startButton").style.transform = "scale(0.9)";
+            document.getElementById("startButton").style.transition = "transform 0.2s ease";
+            document.getElementById("startButton").classList.add("shrink");
+
+            setTimeout(function() {
+                window.location.href = "assessment";
+            }, 200);
+        });
 });

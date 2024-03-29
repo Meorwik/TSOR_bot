@@ -1,19 +1,30 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #3a3b4b, #1e1e2a); /* Темно-фиолетовый цвет */
+    padding: 5px;
+    background: linear-gradient(to bottom right, #1b072a, #1e1e2a);
     color: #fff;
 }
 
-.container {
-    max-width: 90%;
-    margin: 50px auto;
+.container1{
     text-align: center;
-    padding: 20px;
-    background-color: rgba(42, 31, 51, 0.7); /* Темно-фиолетовый цвет */
+}
+
+.container2 {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(123, 40, 178, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container3 {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 105px;
 }
 
 h1 {
@@ -41,13 +52,13 @@ button {
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(150, 150, 150, 0.8);
 }
 
 .animation-target {
     opacity: 1;
     transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.8s ease, transform 0.5s ease;
 }
 
 .animation-target.show {
