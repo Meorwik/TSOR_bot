@@ -1,24 +1,23 @@
 from fastapi.responses import HTMLResponse, JSONResponse
-from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-from .assets.data.assessment import main_assessment
+from .loader import static, templates
+from .routers.api import api_router
+from .config import config
 from fastapi import Request
 from fastapi import FastAPI
 
 
-app = FastAPI(debug=True)
-app.mount("/assets", StaticFiles(directory="src/assets"))
-templates = Jinja2Templates(directory="src/templates")
+app = FastAPI(
+    title=config.project_name,
+    openapi_url=f'{config.api_str}/openapi.json',
+    debug=config.debug_mode
+)
+
+app.include_router(api_router, prefix=config.api_str)
+app.mount("/assets", static)
 
 
 @app.get("/")
 async def root(request: Request):
-    print(main_assessment)
     return templates.TemplateResponse(
         request=request, name="index.jinja2"
     )
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
