@@ -234,8 +234,8 @@ function Update()
         buttonsElem[i].className = "disabled";
       } else {
         buttonsElem[i].className = "back";
-        buttonsElem[i].textContent = "Перейти к призу ";
-        buttonsElem[i].onclick = () => window.open("/api/prize");
+        buttonsElem[i].textContent = "Перейти к призу ✨";
+        buttonsElem[i].onclick = () => window.open("/api/prize", "_self");
       }
     }
   }

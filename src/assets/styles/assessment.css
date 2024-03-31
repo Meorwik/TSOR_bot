@@ -44,6 +44,12 @@
     color: rgba(150, 150, 150, 1);
 }
 
+.context_text {
+    padding: 12px;
+    color: cornsilk;
+    font-size: 14px;
+}
+
 .quiz__body
 {
     width: 100%;
