@@ -16,8 +16,10 @@ TsorBotBackend is the back-end part of a Telegram bot designed for a Digital Edu
 - Css
 - Jinja2
 
-#Screenshots
--![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/737c292e-19e1-4184-ab5b-d029f343f45e)
--![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/fec36f3d-af37-4dfe-a064-2922730396ab)
--![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/03bf6f76-65a0-42d9-89a4-d81ed8a622de)
+# Screenshots
+![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/737c292e-19e1-4184-ab5b-d029f343f45e)
+
+![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/fec36f3d-af37-4dfe-a064-2922730396ab)
+
+![изображение](https://github.com/Meorwik/TsorBotBackend/assets/104008026/03bf6f76-65a0-42d9-89a4-d81ed8a622de)
 
